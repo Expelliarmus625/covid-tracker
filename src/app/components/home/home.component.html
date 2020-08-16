@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1 class="mat-display-3">COVID-19 Tracker</h1>
+  <p class="lead">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, a mollitia
+    laborum eveniet doloremque voluptas aliquid voluptate commodi sapiente
+    quibusdam neque iure eius asperiores exercitationem? Voluptas quidem hic
+    maxime minima?
+  </p>
+  <hr />
+  <app-dashboard-card
+    [totalConfirmed]="totalConfirmed"
+    [totalActive]="totalActive"
+    [totalRecovered]="totalRecovered"
+    [totalDeaths]="totalDeaths"
+    (cardSelected)="changeData($event)"
+  ></app-dashboard-card>
+</div>
+<div class="row">
+  <div class="col">
+    <google-chart [data]="pieChart"></google-chart>
+  </div>
+  <div class="col">
+    <google-chart [data]="columnChart"></google-chart>
+  </div>
+</div>

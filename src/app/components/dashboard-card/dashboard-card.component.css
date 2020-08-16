@@ -1,0 +1,31 @@
+.card {
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.15);
+  border: 0px solid white;
+  background-color: #ececec;
+  border-radius: 8px;
+  cursor : pointer;
+}
+
+.row {
+  background-color: #ececec;
+}
+/* #conf{
+    background-color: #7E57C2;
+}
+
+#active{
+    background-color: #ef5350;
+}
+
+#rec{
+    background-color: #4CAF50;
+}
+
+#ded{
+    background-color: #78909C;
+} */
+
+.card:hover {
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8) inset, 5px 5px 10px rgba(0, 0, 0, 0.15) inset;
+  cursor: pointer;
+}

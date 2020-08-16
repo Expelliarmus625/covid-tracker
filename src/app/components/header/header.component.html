@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a routerLink="/" mat-list-item (click)="sidenav.close()">Home</a>
+      <a routerLink="countries" mat-list-item (click)="sidenav.close()"
+        >Countries</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">...</button>
+      <span>Tracorona</span>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
